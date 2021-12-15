@@ -22,7 +22,8 @@ display.value=answer;
         answer=val/val2;
         display.value=answer;
     }else{
-        display.value=val1
+        answer=val1;
+        display.value=ansswer;
     }
 }
 function AC(){
