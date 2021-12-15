@@ -1,28 +1,37 @@
 <!DOCTYPE html>
-<html lan="en">
+<html>
     <head>
-        <script scr="calculator.js"></script>
-        <href="calculator.css"  ref ="stylesheet">
+<link rel="stylesheet" href="calculator.css">
     </head>
     <body>
-        <button id ="add-button" onclick= "add()">+</button>
-        <button id="minus-button" onclick="minus()" >-</button>
-        <button id= "multipy-button" onclick="multipy()">X</button><br/>
-        <button id ="one-button" onclick= "one()">1</button>
-        <button id="two-button" onclick="two()" >2</button>
-        <button id= "three-button" onclick="three()">3</button><br/>
-        <button id ="four-button" onclick= "four()">4</button>
-        <button id="five-button" onclick="five()" >5</button>
-        <button id= "six-button" onclick="six()">6</button><br/>
-        <button id ="seven-button" onclick= "add()">7</button>
-        <button id="eight-button" onclick="minus()" >8</button>
-        <button id= "nine-button" onclick="multipy">9</button><br>
-        <button id= "zero-button" onclick="zero">0</button>
-        <button id="del-button" onclick="del">Del</button>
-
-        <button></button>
-
-        <button></button>
-
+        <div id="cal"> 
+        <input id="display" type="text" readonly="readonly">
+        <div id="keys">
+  <!-- <div class="row"> -->
+          <button id="AC" onclick="AC()">AC</button>
+           <button id="divide" onclick="divide()">/</button> 
+           <button id="X" onclick="multiply()">x</button>
+       <button id="seven" onclick="seven()">7</button>
+        <button id="eight" onclick="eight()">8</button>
+       <button id="nine" onclick="nine()">9</button> 
+       <button id="add" onclick="add()">+</button>    
+        <button id="four" onclick="four()">4</button>
+          <button id="five" onclick="five()">5</button>
+          <button id="six" onclick="six()">6</button>
+          <button id="minus" onclick="minus()">-</button>
+            
+            
+               <button id="one" onclick="one()">1</button>
+                <button id="two" onclick="two()">2</button>
+                <button id="three" onclick="three()">3</button>
+                <button id="equal" onclick="equal()">=</button>
+                <button id="point" onclick="point()">.</button>
+                <button id="zero" onclick="zero()">0</button>
+                 
+                
+        </div>
+        </div>
+<script src="calculator.js"></script>
+    
     </body>
 </html>
