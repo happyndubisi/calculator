@@ -30,6 +30,12 @@ display.value=answer;
         display.value=answer;
     }else{answer=val1;
         display.value=answer;
+<<<<<<< HEAD
+=======
+    }else{
+        answer=val1;
+        display.value=ansswer;
+>>>>>>> f05b19813168c725da4a2a4ad3508953a2714352
     }
     localStorage.setItem(ANSWER_KEY, answer); 
     operation=true;
