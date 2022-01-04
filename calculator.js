@@ -1,6 +1,13 @@
-
+const ANSWER_KEY = "calculator_answer"
 let display= document.getElementById("display");
-let val1=""
+let val1= localStorage.getItem(ANSWER_KEY);
+if(val1){
+    display.value=val1
+}else{
+    val1=""
+    display.value= val1;
+}
+console.log(val1)
 let val2=""
 let operation=true
 let operator=" "
@@ -8,7 +15,7 @@ let operator=" "
 function equal(){
     let answer=" "
     val1= parseFloat(val1);
-    val2= parseFloat(val2)
+    val2= parseFloat(val2);
     if(operator==="addition"){
 answer=val1 + val2; 
 display.value=answer;
@@ -19,14 +26,19 @@ display.value=answer;
         answer=val1 * val2;
         display.value=answer;
     }else if(operator==="division"){
-        answer=val/val2;
+        answer=val1/val2;
         display.value=answer;
-    }else{
-        display.value=val1
+    }else{answer=val1;
+        display.value=answer;
     }
+    localStorage.setItem(ANSWER_KEY, answer); 
+    operation=true;
+    val1="" + answer;
+    val2="";
+    
 }
 function AC(){
-    let del="" 
+     let del="" 
 val1=del
 val2=del
 operation=true
